@@ -16,8 +16,8 @@ export default function Dessert(props) {
         <div className='dessert'>
             <div className='image-wrapper'>
                 <picture className='dessert-img' style={itemsInCart > 0 ? imgStyles : {}}>
-                    <source srcSet={useImage(imgDesktop)} media="(min-width: 1440px)" alt={`image of ${title}`}/>
-                    <source srcSet={useImage(imgTablet)} media="(min-width: 450px)" alt={`image of ${title}`}/>
+                    <source srcSet={useImage(imgDesktop)} media="(min-width: 1440px)"/>
+                    <source srcSet={useImage(imgTablet)} media="(min-width: 450px)"/>
                     <img src={useImage(imgMobile)} alt={`image of ${title}`}/>
                 </picture>
                 {itemsInCart > 0 ?
